@@ -1,8 +1,24 @@
+<p align="center">
+  <a href="https://editableppt.com"><img src="docs/images/logo.png" alt="EditablePPT logo" width="88"></a>
+</p>
+
 # EditablePPT Image to PPT
+
+官网：[editableppt.com](https://editableppt.com) · [在线将图片转换为可编辑 PowerPoint](https://editableppt.com/image-to-pptx)
 
 把 ChatGPT、Nano Banana 或其他工具生成的 PNG/JPG 图片转换为可编辑的 PowerPoint。这个仓库提供 **Codex 插件 + skill + 本地 MCP 工具**：用户在 Codex 中给出一张或多张图片，MCP 将图片交给 EditablePPT 的 AI 图层拆分服务，按输入顺序合并为一个 `.pptx`。
 
 图片中的文字、形状和图像会尽可能拆成独立的 PowerPoint 对象。复杂效果、字体和识别结果可能需要在 PowerPoint 中调整；这不是把原图作为单个不可编辑对象嵌入。
+
+## 效果预览
+
+在 [EditablePPT 网站](https://editableppt.com) 转换图片后，可以在网页编辑器中调整识别出的元素，并下载 PPTX 继续在 PowerPoint 中编辑。
+
+![图片转换为可编辑 PowerPoint 的网页界面](docs/images/image-to-pptx.png)
+
+![EditablePPT 网页编辑器中的文本编辑](docs/images/editor.png)
+
+![在 PowerPoint 中选中拆分后的独立图层](docs/images/editable-slide.png)
 
 ## 安装
 
