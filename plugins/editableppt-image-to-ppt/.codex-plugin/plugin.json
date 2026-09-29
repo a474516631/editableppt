@@ -1,0 +1,24 @@
+{
+  "name": "editableppt-image-to-ppt",
+  "version": "0.1.0",
+  "description": "Convert local images into editable PowerPoint slides with EditablePPT",
+  "author": {
+    "name": "EditablePPT"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "EditablePPT Image to PPT",
+    "shortDescription": "Turn PNG/JPG images into editable PowerPoint slides.",
+    "longDescription": "Convert one or more local images through EditablePPT and save an editable PPTX deck.",
+    "developerName": "EditablePPT",
+    "category": "Productivity",
+    "capabilities": ["Write"],
+    "websiteURL": "https://editableppt.com",
+    "privacyPolicyURL": "https://editableppt.com/privacy-policy",
+    "termsOfServiceURL": "https://editableppt.com/terms-of-service",
+    "defaultPrompt": [
+      "Convert these images into one editable PowerPoint presentation."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

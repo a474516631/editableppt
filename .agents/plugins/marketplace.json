@@ -1,0 +1,20 @@
+{
+  "name": "editableppt",
+  "interface": {
+    "displayName": "EditablePPT"
+  },
+  "plugins": [
+    {
+      "name": "editableppt-image-to-ppt",
+      "source": {
+        "source": "local",
+        "path": "./plugins/editableppt-image-to-ppt"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

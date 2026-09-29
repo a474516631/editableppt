@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "editableppt-image-to-ppt": {
+      "command": "node",
+      "args": [
+        "-e",
+        "const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),url=require('node:url');let root=process.env.CLAUDE_PLUGIN_ROOT||process.env.EDITABLEPPT_PLUGIN_ROOT;if(!root||!fs.existsSync(path.join(root,'server.mjs'))){const cache=path.join(process.env.CODEX_HOME||path.join(os.homedir(),'.codex'),'plugins','cache');const found=[];for(const publisher of fs.existsSync(cache)?fs.readdirSync(cache):[]){const dir=path.join(cache,publisher,'editableppt-image-to-ppt');if(!fs.existsSync(dir))continue;for(const version of fs.readdirSync(dir)){const candidate=path.join(dir,version,'server.mjs');if(fs.existsSync(candidate))found.push(candidate)}}found.sort();if(!found.length)throw new Error('EditablePPT plugin server not found');root=path.dirname(found.at(-1))}import(url.pathToFileURL(path.join(root,'server.mjs')).href)"
+      ]
+    }
+  }
+}
